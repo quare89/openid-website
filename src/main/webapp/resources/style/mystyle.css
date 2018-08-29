@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+.mywebsite { 
+    background-color: #ddefff;
+    color: #000000;
+	padding: 50px 25px;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #e5e5e5;
+}

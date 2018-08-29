@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:replace="fragments/header :: header"> </head>
+
+<body>
+	<div lang="en" th:replace="fragments/header :: companytitle"> </div>
+	<div class="container-fluid text-center">
+		<p th:text="${email}"></p>
+	</div>
+	<div lang="en" th:replace="fragments/footer :: footer"> </div>
+</body>
+</html>
+	

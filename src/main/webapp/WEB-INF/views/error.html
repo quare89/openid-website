@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" th:replace="fragments/header :: header">
+</head>
+
+<body>
+	<div lang="en" th:replace="fragments/header :: companytitle"></div>
+	<div class="container-fluid bg-grey">
+		<div class="row">
+			<div class="col-sm-4">
+				<img class="img-rounded" src="/mywebsite/resources/images/oops.png"
+					height="300px" />
+			</div>
+			<div class="col-sm-8">
+				<div class="alert alert-danger">OOPS...Something went wrong!!</div>
+				<div class="row">
+					<div class="col-sm-4">Date</div>
+					<div class="col-sm-8" th:text="${timestamp}"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">Message</div>
+					<div class="col-sm-8" th:text="${message}"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">Status</div>
+					<div class="col-sm-8" th:text="${status}"></div>
+				</div>
+				<div class="row" th:if="${exception != null}">
+					<div class="col-sm-4">Exception</div>
+					<div class="col-sm-8" th:text="${exception}"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div lang="en" th:replace="fragments/footer :: footer"></div>
+</body>
+</html>
+
+
