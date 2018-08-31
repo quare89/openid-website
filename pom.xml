@@ -5,7 +5,7 @@
 	<artifactId>mywebsite</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mywebsite Maven Webapp</name>
+	<name>openidwebsite Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 

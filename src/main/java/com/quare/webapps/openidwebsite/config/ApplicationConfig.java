@@ -30,9 +30,9 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
-@ComponentScan(basePackages = "com.quare.webapps.mywebsite")
+@ComponentScan(basePackages = "com.quare.webapps.openidwebsite")
 @EnableWebMvc
-@EnableJpaRepositories(basePackages = "com.quare.webapps.mywebsite.dao")
+@EnableJpaRepositories(basePackages = "com.quare.webapps.openidwebsite.dao")
 @EnableTransactionManagement
 @PropertySource({ "classpath:application.properties", "classpath:application-${spring.profiles.active}.properties" })
 public class ApplicationConfig implements WebMvcConfigurer {
@@ -92,7 +92,7 @@ public class ApplicationConfig implements WebMvcConfigurer {
 		vendorAdapter.setShowSql(true);
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
 		factory.setJpaVendorAdapter(vendorAdapter);
-		factory.setPackagesToScan("com.quare.webapps.mywebsite.entities.jpa");
+		factory.setPackagesToScan("com.quare.webapps.openidwebsite.entities.jpa");
 		factory.setDataSource(datasource);
 		return factory;
 	}

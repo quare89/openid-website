@@ -11,7 +11,7 @@ public class MySpringMVCDispatcherInitializer implements WebApplicationInitializ
 	@Override
     public void onStartup(ServletContext container) {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-        context.setConfigLocation("com.quare.webapps.mywebsite.config");
+        context.setConfigLocation("com.quare.webapps.openidwebsite.config");
  
         container.setInitParameter("spring.profiles.active", "dev");
         
